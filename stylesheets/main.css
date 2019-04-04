@@ -1,0 +1,8 @@
+footer {
+    width: 100%;
+    background-image: radial-gradient(transparent, rgb(0, 0, 0)), url(/images/Salem\ Baptist\ Church\ -\ Google\ Maps\ -\ Google\ Chrome\ 4_3_2019\ 11_30_00\ PM.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
