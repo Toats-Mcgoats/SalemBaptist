@@ -1,3 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+#active a {
+    color: aqua;
+}
+
+
+
+@media only screen and (max-width: 766px) {
+    #mobile-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+   
+    #hamburger-icon {
+        position: sticky;
+        display: inline-block;
+        margin: 1.4em;
+        
+    }
+    .icon-bars div {
+        height: 3px;
+        background: #000;
+        margin: 4px 0;
+        transition: .3s;
+    }
+    .icon-bars {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .one {
+        width: 25px;
+    }
+    .two {
+        width: 15px;
+    }
+    .three {
+        width: 20px;
+    }
+    .icon-bars:hover div {
+        width: 25px;
+    }
+
+    .social-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        align-items: center;
+        margin: 10% 0;
+    }
+    .social-menu li {
+        padding: 5%;
+        border: #eee 1px solid;
+        border-radius: 50%;
+    }
+
+.overlay {    
+    height: 100%;
+    width: 0%;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+}
+
+    /* Position the content inside the overlay */
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+}
+
+  .overlay ul {
+      list-style: none;
+      color: #eee;
+      padding: 0;
+      margin: 10% 0;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eee;
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     width: 100%;
     background-image: radial-gradient(transparent, rgb(0, 0, 0)), url(/images/Salem\ Baptist\ Church\ -\ Google\ Maps\ -\ Google\ Chrome\ 4_3_2019\ 11_30_00\ PM.png);
