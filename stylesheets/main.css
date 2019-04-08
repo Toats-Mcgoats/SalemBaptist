@@ -2,130 +2,99 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.logo a {
+a {
     text-decoration: none;
-    color: #000;
+    color: #eee;
+    cursor: pointer;
 }
 li {
     list-style: none;
+}
+.btn {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.btn-color {
+    border-color: orangered;
+    background-color: orangered;
+    color: #fff;
 }
 #active a {
     color: aqua;
 }
 
-
-
-@media only screen and (max-width: 766px) {
-    #mobile-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 100%;
-    }
-
-   
-    #hamburger-icon {
-        position: sticky;
-        display: inline-block;
-        margin: 1.4em;
-        
-    }
-    .icon-bars div {
-        height: 3px;
-        background: #000;
-        margin: 4px 0;
-        transition: .3s;
-    }
-    .icon-bars {
-        display: block;
-        cursor: pointer;
-        width: 30px;
-    }
-    .one {
-        width: 25px;
-    }
-    .two {
-        width: 15px;
-    }
-    .three {
-        width: 20px;
-    }
-    .icon-bars:hover div {
-        width: 25px;
-    }
-
-    .social-menu {
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-        align-items: center;
-        margin: 10% 0;
-    }
-    .social-menu li {
-        padding: 5%;
-        border: #eee 1px solid;
-        border-radius: 50%;
-    }
-
-.overlay {    
-    height: 100%;
-    width: 0%;
-    position: fixed; 
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0, 0.7);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s;
+/* Header Styles */
+#mobile-header {
+    display: none;
 }
-
-    /* Position the content inside the overlay */
+.closebtn {
+    display: none;
+}
 .overlay-content {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-top: 20px; 
+    justify-content: space-evenly;
+}
+.nav-menu {
+    display: inherit;
+    margin: 0;
+}
+.nav-menu li {
+    margin: auto 20px;
+}
+.social-menu {
+    display: inherit;
+    margin: 0;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    top: 20%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    padding-inline-end: 20px;
+}
+.social-menu li {
+    margin: 0 5px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    padding: 10px;
 }
 
-  .overlay ul {
-      list-style: none;
-      color: #eee;
-      padding: 0;
-      margin: 10% 0;
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 36px;
+/* Intro Styles */
+header {
+    background-image: url(/images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #eee;
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 40px;
-    color: #fff;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
+    min-width: 100%;
+    height: 100%;
 }
+.intro {
+    margin: 200px auto;
+    text-align: center;
+    max-width: max-content;   
+    color: #eee;
+}
+.intro h1 {
+    font-size: 5rem;
+}
+.intro .btn {
+    margin-top: 75px;
+    padding: 20px 40px;
+    font-size: 1.2rem; 
+}
+.newest-sermon {
+    display: flex;
+    background: rgba(0, 0, 0, .5);
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.2em 3em;
+}
+
+
 
 
 
