@@ -23,9 +23,11 @@ li {
     background-color: orangered;
     color: #fff;
 }
-#active a {
-    color: aqua;
+.btn-donate a {
+    color: orangered;
+    font-size: 1.4rem;
 }
+
 
 /* Header Styles */
 #mobile-header {
@@ -40,10 +42,12 @@ li {
     flex-direction: row;
     padding-top: 20px; 
     justify-content: space-evenly;
+    align-items: baseline;
 }
 .nav-menu {
     display: inherit;
     margin: 0;
+    font-size: 1.7rem;
 }
 .nav-menu li {
     margin: auto 20px;
@@ -65,7 +69,7 @@ li {
 .logo a {
     color: black;
     font-family: 'IM Fell English SC', serif;
-    font-size: 2em;
+    font-size: 4rem;
 }
 
 
@@ -104,19 +108,106 @@ header {
 /* About Section*/
 
 #about img{
-    width: 30em;
-    height: 25em;
-    border: 1px solid #000;
+    width: 30rem;
+    height: 25rem;
+    border: 1px solid #888;
+    margin-bottom: 10px;
 }
 
-
 .mission-container {
-    margin: 10% auto;
+    padding: 5% 0;
     display: flex;
     flex-direction: row;
-    flex-basis: 70%;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
-    
+}
+
+.belong {
+    flex-direction: row-reverse;
+}
+
+.info {
+    font-size: 1.3rem;
+}
+
+.about-info {
+    width: 50%;
+}
+
+.info .btn {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/* Events Style */
+#events {
+    height: 100%;
+    background-color: #fffdec;
+    padding: 4% 0;
+}
+
+.events h3 {
+    color: orangered;
+}
+
+.card {
+    height: 20rem;
+    margin: 5rem 10px;
+}
+
+.event-1 {
+    background-image: url(/images/hands-in.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.event-2 {
+    background-image: url(/images/passion-led-us-here.jpg);
+    background-size: cover;
+}
+
+.event-3 {
+    background-image: url(/images/forgein-kids-mission.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.events .btn {
+    font-size: 1.2rem;
+}
+/* Sermon Styles */
+#sermon {
+    background-image: url(/images/praise.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 85vh;
+    min-height: fit-content;
+    padding: 10% 0;
+    padding-top: 17%;
+}
+
+video {
+    height: 25rem;
+    width: 70rem;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.sermon-info {
+    color: #aaa;
+    /* background-color: rgba(0, 0, 0, .4); */
+    padding: .8rem;
+    border-radius: 5px;
+}
+
+.sermon-info h1 {
+    font-size: 3rem;
+}
+
+.sermon-info h3 {
+    color: orangered;
 }
 
 

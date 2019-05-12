@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Salem Baptist Church</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Josefin+Slab:700|Over+the+Rainbow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Josefin+Slab|Over+the+Rainbow" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/mobile-menu.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/debug.css"> -->
 </head>
 <body>
     <header>
@@ -40,7 +42,7 @@
                     <li><a href="#"><i class="far fa-envelope"></a></i></li>
                     <li><a href="#"><i class="fab fa-youtube"></a></i></li>
                 </ul>
-                <li id="active" class="btn"><a href="#">Donate</a></li>    
+                <li class="btn btn-donate"><a href="#">Donate</a></li>    
             </div>
         </nav><!--End Nav-->
         <div class="intro">
@@ -56,53 +58,64 @@
     </header>
 
     <section id="about">
-        <div class="mission-container">
-            <img src="/images/intro-bg.jpg" alt="">
-            <div class="info">
-                <h1>Our Mission</h1>
-                <p>Because God showed us love through his Son, we show Him love through loving others.</p>
-                <button class="btn btn-color">About Us</button>
+        <div class="container is-fluid has-background-light">
+            <div class="mission-container">
+                <img src="/images/pray-together.jpg" alt="">
+                <div class="info">
+                    <h1 class="has-text-centered has-text-weight-bold">Our Mission</h1>
+                    <p>Because God showed us love through his Son, we show Him love through loving others.</p>
+                    <button class="btn btn-color">About Us</button>
+                </div>
+            </div>
+            <div class="mission-container belong">
+                <img src="/images/walking-in-field.jpg" alt="">
+                <div class="about-info info">
+                    <h1 class="has-text-centered has-text-weight-bold">Our Community</h1>
+                    <p>Nestled in a rual farming community, we think of the church more as a family than a 
+                        formal, religious institution. For us, its not about what you wear or where you came from, we're only
+                        concerned with how God is working in life now.
+                    </p>    
+                    <button class="btn btn-color">Learn More</button>
+                </div>
             </div>
         </div>
-        <div class="mission-container">
-            <div class="info">
-                <h3>You belong</h3>
-                <h1>Our Community</h1>
-                <p>Nestled in a rual farming community, we think of the church more as a family than a 
-                formal, religious institution. For us, its not about what you wear or where you came from, we're only
-                concerned with how God is working in life now.
-                </p>
-                <button class="btn btn-color">Learn More</button>
+    </section>
+
+    <section id="events">
+        <div class="events container has-text-centered">
+            <h3 class="is-size-5">Upcoming Events</h3>
+            <h1 class="is-size-2 has-text-weight-bold">Join Our Community</h1>
+            <div class="event-cards container">
+                <div class="columns is-centered">
+                    <div class="card event-1 column is-one-third"></div>
+                    <div class="card event-2 column is-one-third"></div>
+                    <div class="card event-3 column is-one-third"></div>
+                </div>
             </div>
-            <img src="/images/Salem Baptist Church - Google Maps - Google Chrome 4_3_2019 11_30_00 PM.png" alt="">
+            <button class="btn btn-color">Find More</button>
         </div>
     </section>
 
-    <!---<section id="events">
-        <h3>Upcoming Events</h3>
-        <h1>Join Our Community</h1>
-        <div class="event-cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
-        <button class="btn btn-color">Find More</button>
-    </section>
-
-    <section class="sermon">
-        <video src="#"></video>
-        <div class="info">
-            <h3>Latest Sermon</h3>
-            <h1>Catch up on Our Latest Series</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nihil sapiente numquam alias fugit veniam iure? Itaque vero laborum 
-            eius qui, quis consectetur fugiat rerum neque, sit alias veritatis? 
-            Voluptatibus sapiente voluptates laboriosam distinctio enim fuga.</p>
-            <button class="btn btn-color">This weeks message</button>
+    <section id="sermon">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <video class="column" src="#"></video>
+                <div class="column">    
+                    <div class="sermon-info info">
+                        <h3 class="has-text-weight-bold has-text-centered">Latest Sermon</h3>
+                        <h1 class="has-text-weight-bold">Catch up on Our Latest Series</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nihil sapiente numquam alias fugit veniam iure? Itaque vero laborum 
+                            eius qui, quis consectetur fugiat rerum neque, sit alias veritatis? 
+                            Voluptatibus sapiente voluptates laboriosam distinctio enim fuga.</p>
+                        <button class="btn btn-color">This weeks message</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="calendar">
+    <!--<section class="calendar">
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
     
